@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // alert("HIHIHI")
+        // var user1 = "Ngọc Mai";
+        // document.write(`xin chao : ${user1}`)
+        // var user2 = "Thanh Mai";
+        // document.write(`xin chao : ${user2}`)
+
+        // định nghĩa hàm 
+        // loại 1 hàm không tham số không giá trị trả về 
+
+        function hello() {
+            document.write("Xin chào thế giới");
+        }
+
+
+        // lời gọi hàm 
+        hello();
+        hello();
+        // loại 2 có tham số truyền vào 
+        function helloUser(fullName) {
+            document.write(`<h1>Xin chào : ${fullName}</h1>`)
+        }
+
+        // gọi hàm có tham số truyền vào 
+        helloUser("Nguyễn Thị Thanh Mai");
+        helloUser("NGuyễn Bao Thư");
+
+        // định nghĩa hàm truyền vào 2 số a và b 
+        // in ra màn hình kết quả a + b = ?
+
+        // input a,b 
+        // pros  document.wite(`a + b = ${a+b}`)
+        // output a + b = ? vd a = 10, b= 20 ==> 10+20 = 30 
+
+        var a = 10
+        var b = 20;
+        // var sum = a + b;
+        // document.write(`<h1>${a} + ${b} = ${sum}</h1>`);
+
+        var c = 10;
+        var d = 100;
+        // var sum = c + d;
+        // document.write(`<h1>${c} + ${d} = ${sum}</h1>`);
+        // định nghĩa hàm tính tổng 2 tham số truyền vào 
+
+        // function sum(num1, num2) {
+        //     var c = num1 + num2;
+        //     document.write(`<h1>${num1} + ${num2} = ${c}</h1>`);
+        // }
+
+        // // gọi hàm 
+        // sum(a, b);
+        // sum(c, d);
+
+        // viết hàm kiểm tra 1 số truyền vào là số chẵn hay số lẻ 
+
+
+        // function checkNum(num) {
+        //     if (num % 2 == 0) {
+        //         document.write(`${num} là số chẵn`)
+        //         return;
+        //     }
+        //     document.write(`${num} là số lẻ`)
+        // }
+
+        // var num = +prompt("Nhap vao so bat ky");
+
+        // checkNum(num);
+
+        // Hàm có tham số và có giá trị trả về 
+        // function FName(param){
+        //     return
+        // }
+
+        // viết hàm truyền vào số nguyên trả về giá trị giai thua cua so do 
+
+        // var num = 10;
+        // var giaiThua = 1;
+        // for (var i = 1; i <= num; i++) {
+        //     giaiThua *= i;
+        // }
+
+        function tinhGiaiThua(num) {
+            var giaiThua = 1;
+            for (var i = 1; i <= num; i++) {
+                giaiThua *= i;
+            }
+            return giaiThua;
+        }
+
+        var kq = tinhGiaiThua(10);
+        document.write(`KQ = ${kq}`)
+
+        // viết hàm truyền vào 1 mảng số bất kỳ trả về tổng giá trị các phần tử 
+
+        // gợi ý
+        // function ? (?){
+        //     sum = ?
+        //     for ()
+
+        //     return sum;
+        // }
+
+
+    </script>
+</body>
+
+</html>
